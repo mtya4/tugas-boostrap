@@ -1,0 +1,85 @@
+.jumbotron {
+  margin-top: 40px;
+  margin-left: 20px;
+}
+
+#container {
+  display: flex;
+}
+
+.header {
+  background-color: rgb(0, 240, 44);
+  width: 160px;
+  text-align: center;
+}
+
+.header2 {
+  background-color: rgb(0, 240, 44);
+  width: 220px;
+  text-align: center;
+}
+
+.p1 {
+  padding-left: 15px;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    flex-direction: column; /* Mengatur kembali menjadi tata letak kolom pada tampilan mobile */
+  }
+}
+
+#kotak2,
+#kotak3 {
+  box-shadow: 5px 8px 5px black;
+}
+
+#kotak2 h5 span,
+#kotak3 h5 span {
+  background-color: rgb(0, 240, 44);
+}
+
+#kotak1,
+#kotak4 {
+  box-shadow: 5px 8px 5px rgba(130, 126, 126, 0.838);
+}
+
+#kotak1 h5 span,
+#kotak4 h5 span {
+  background-color: white;
+}
+
+#footer {
+  border-radius: 10px;
+}
+
+#footer a {
+  color: rgb(101, 165, 5);
+  text-decoration: none;
+}
+
+/* Styling for desktop */
+@media (min-width: 768px) {
+  #card-text {
+    border-right: 1px solid white;
+    padding-right: 10px; /* Add padding to space out the border from text */
+    margin-right: 10px; /* Add margin to space out the border from the next element */
+  }
+
+  #card-text:last-child {
+    border-right: none; /* Remove border for the last item */
+    padding-right: 0; /* Reset padding */
+    margin-right: 0; /* Reset margin */
+  }
+}
+
+/* Styling for mobile */
+@media (max-width: 767px) {
+  #card-text {
+    border-right: none; /* Remove border for mobile */
+    padding-right: 0; /* Reset padding */
+    margin-right: 0; /* Reset margin */
+    margin-bottom: 10px; /* Add margin at the bottom to separate items */
+  }
+}
